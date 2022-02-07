@@ -1,5 +1,7 @@
 class Pessoa:
-    def __init__(self, *filhos, nome=None, idade=35):
+    olhos = 2 #criado attibuto de classe/defaul#
+
+    def __init__(self, *filhos, nome=None, idade=35): #criado atributo de instancia#
         self.idade = idade
         self.nome = nome
         self.filhos = list(filhos)
@@ -20,5 +22,14 @@ if __name__ == '__main__':
         print(filho.nome)
     luciano.sobrenome= 'Ramalho'
     del luciano.filhos
-    print(luciano.__dict__)
+    luciano.olhos= 1
+    del luciano.olhos
+    print(luciano.__dict__) #apenas informa os atributos dinamicos#
     print(renzo.__dict__)
+    Pessoa.olhos = 3
+    print(Pessoa.olhos)
+    print(luciano.olhos)
+    print(renzo.olhos)
+    print(id(Pessoa.olhos), id(luciano.olhos), id(renzo.olhos))
+
+
