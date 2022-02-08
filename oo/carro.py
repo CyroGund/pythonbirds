@@ -1,3 +1,6 @@
+
+
+
 """
 Voce deve criar uma classe carro que vai possuir
 dois atributos compostos por outras duas classes:
@@ -61,7 +64,7 @@ O   L
     >>> direcao.valor
     'Norte'
     >>> direcao.girar_a_esquerda()
-    >>> direcao.valor
+    >>> direcao.vaor
     'Oeste'
     >>> direcao.girar_a_esquerda()
     >>> direcao.valor
@@ -96,3 +99,6 @@ O   L
     >>> carro.calcular_direcao()
     >>> 'Oeste'
 """
+class Motor:
+    def __init__(self):
+        self.velocidade = 0
