@@ -31,7 +31,7 @@ O   L
     1
     >>> motor.acelerar()
     >>> motor.velocidade
-    2  
+    2
     >>> motor.acelerar()
     >>> motor.velocidade
     3
@@ -91,9 +91,9 @@ O   L
     'Norte'
     >>> carro.girar_a_esquerda()
     >>> carro.calcular_direcao()
-    'Oeste'    
+    'Oeste'
+      
 """""
-
 
 class Carro:
     def __init__(self, direcao, motor):
